@@ -204,6 +204,99 @@ body {
 }
 
 /* ========================================
+   HERO SECTION - Carrousel Bootstrap
+   ======================================== */
+
+.hero {
+  margin-top: 0;
+  position: relative;
+}
+
+#heroCarousel {
+  width: 100%;
+}
+
+#heroCarousel .carousel-item img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+#heroCarousel .carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+#heroCarousel .carousel-caption h2 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+#heroCarousel .carousel-caption p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+}
+
+#heroCarousel .carousel-indicators {
+  margin-bottom: 2rem;
+}
+
+#heroCarousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+#heroCarousel .carousel-indicators button.active {
+  background-color: #16c5b7;
+  border-color: #16c5b7;
+}
+
+#heroCarousel .carousel-control-prev,
+#heroCarousel .carousel-control-next {
+  width: 5%;
+  opacity: 0.8;
+}
+
+#heroCarousel .carousel-control-prev:hover,
+#heroCarousel .carousel-control-next:hover {
+  opacity: 1;
+}
+
+#heroCarousel .carousel-control-prev-icon,
+#heroCarousel .carousel-control-next-icon {
+  background-color: rgba(22, 197, 183, 0.8);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+#heroCarousel .carousel-control-prev-icon:hover,
+#heroCarousel .carousel-control-next-icon:hover {
+  background-color: #16c5b7;
+}
+
+/* Responsive Hero */
+@media (max-width: 768px) {
+  #heroCarousel .carousel-item img {
+    height: 400px;
+  }
+
+  #heroCarousel .carousel-caption h2 {
+    font-size: 1.8rem;
+  }
+
+  #heroCarousel .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+
+/* ========================================
    FOOTER - Styles élégants
    ======================================== */
 

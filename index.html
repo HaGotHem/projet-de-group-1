@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechVision - Solutions Digitales</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
     <!-- ========================================
@@ -39,13 +41,54 @@
     </header>
 
     <!-- ========================================
-         HERO SECTION - Section principale
+         HERO SECTION - Section principale avec carrousel
          ======================================== -->
     <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <!-- HERO ICI -->
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/renard.png" class="d-block w-100" alt="Renard" style="height: 600px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4 fw-bold">Renard Élégant</h2>
+              <p class="lead">Découvrez la beauté de la nature sauvage</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/grenouille.png" class="d-block w-100" alt="Grenouille" style="height: 600px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4 fw-bold">Grenouille Mignonne</h2>
+              <p class="lead">La nature dans toute sa splendeur</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/chats.png" class="d-block w-100" alt="Chats" style="height: 600px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4 fw-bold">Chats Adorables</h2>
+              <p class="lead">Companions fidèles et affectueux</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/porte.png" class="d-block w-100" alt="Porte" style="height: 600px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4 fw-bold">Porte Élégante</h2>
+              <p class="lead">L'entrée vers de nouvelles possibilités</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
       </div>
     </section>
 
@@ -180,5 +223,7 @@
         </p>
       </div>
     </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
