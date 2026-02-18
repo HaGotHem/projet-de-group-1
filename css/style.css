@@ -473,6 +473,350 @@ body {
 }
 
 /* ========================================
+   PAGE HERO (Services, À propos, Contact)
+   ======================================== */
+
+.page-hero {
+  background: linear-gradient(135deg, #5f6c7d 0%, #4a5568 100%);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(95, 108, 125, 0.3);
+}
+
+.page-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.page-hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.95;
+}
+
+/* ========================================
+   ABOUT - Intro + Carte style uiverse
+   ======================================== */
+
+.about-intro {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+.about-intro .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-intro-text .section-title {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.about-lead {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5f6c7d;
+  margin-bottom: 1rem;
+}
+
+.about-intro-text p {
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.about-card-uiverse {
+  border: 3px solid #5f6c7d;
+  background: linear-gradient(135deg, #0000 18.75%, #e8e9ea 0 31.25%, #0000 0),
+    repeating-linear-gradient(45deg, #e8e9ea -6.25% 6.25%, #5f6c7d 0 18.75%);
+  background-size: 60px 60px;
+  background-color: #5f6c7d;
+  padding: 2.5rem;
+  box-shadow: rgba(95, 108, 125, 0.35) 0px 25px 25px -10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-card-uiverse:hover {
+  transform: translateY(-8px);
+  box-shadow: rgba(95, 108, 125, 0.45) 0px 30px 30px -10px;
+}
+
+.about-card-inner {
+  background: #16c5b7;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-card-icon {
+  font-size: 2.5rem;
+  color: #5f6c7d;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.about-card-inner h3 {
+  color: #5f6c7d;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.about-card-inner p {
+  color: #5f6c7d;
+  font-weight: 600;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* ========================================
+   ABOUT - Stats (style uiverse)
+   ======================================== */
+
+.about-stats {
+  padding: 3rem 0;
+  background: #f8f9fa;
+}
+
+.about-stats .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 2rem 1rem;
+  border: 3px solid #5f6c7d;
+  background: linear-gradient(135deg, #16c5b7 0%, rgba(22, 197, 183, 0.9) 100%);
+  color: #5f6c7d;
+  font-weight: 700;
+  box-shadow: rgba(95, 108, 125, 0.25) 0px 20px 20px -8px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: rgba(95, 108, 125, 0.35) 0px 25px 25px -8px;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #5f6c7d;
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .stat-number {
+    font-size: 2.2rem;
+  }
+}
+
+/* ========================================
+   CONTACT - Formulaire style uiverse
+   ======================================== */
+
+.contact-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.contact-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.contact-form-wrapper .section-title {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group-uiverse {
+  position: relative;
+}
+
+.form-group-uiverse input,
+.form-group-uiverse textarea {
+  width: 100%;
+  padding: 1rem 1rem 0.5rem;
+  border: 2px solid #5f6c7d;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group-uiverse textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group-uiverse input:focus,
+.form-group-uiverse textarea:focus {
+  outline: none;
+  border-color: #16c5b7;
+  box-shadow: 0 0 0 3px rgba(22, 197, 183, 0.2);
+}
+
+.form-group-uiverse label {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+.form-group-textarea label {
+  top: 1.5rem;
+  transform: none;
+}
+
+.form-group-uiverse input:focus + label,
+.form-group-uiverse input:not(:placeholder-shown) + label,
+.form-group-uiverse textarea:focus + label,
+.form-group-uiverse textarea:not(:placeholder-shown) + label {
+  top: 0.35rem;
+  transform: translateY(0);
+  font-size: 0.75rem;
+  color: #16c5b7;
+  font-weight: 600;
+}
+
+.btn-uiverse {
+  align-self: flex-start;
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #16c5b7;
+  background: #5f6c7d;
+  border: 2px solid #16c5b7;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: rgba(95, 108, 125, 0.3) 0px 10px 20px -5px;
+}
+
+.btn-uiverse:hover {
+  background: #16c5b7;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: rgba(22, 197, 183, 0.35) 0px 12px 24px -5px;
+}
+
+.contact-info .section-title {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info-card {
+  border: 3px solid #5f6c7d;
+  background: linear-gradient(135deg, #0000 18.75%, #e8e9ea 0 31.25%, #0000 0),
+    repeating-linear-gradient(45deg, #e8e9ea -6.25% 6.25%, #5f6c7d 0 18.75%);
+  background-size: 60px 60px;
+  background-color: #5f6c7d;
+  padding: 1.5rem;
+  box-shadow: rgba(95, 108, 125, 0.3) 0px 20px 25px -10px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #16c5b7;
+  margin-bottom: 0.75rem;
+  color: #5f6c7d;
+  font-weight: 600;
+}
+
+.contact-info-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.contact-info-item strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-info-item p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
    FOOTER - Styles élégants
    ======================================== */
 
